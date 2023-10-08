@@ -2,7 +2,7 @@ console.clear();
 import { train, generate } from "./index.js"
 
 
-const rule = ([a,b,c])=>[a*5+c*b, a+c]
+const rule = ([a, b, c])=>[a**5+c*b, a+c]
 
 let [x, y] = generate(0, 10, 1000, 3, rule,true)
 
