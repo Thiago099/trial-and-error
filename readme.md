@@ -1,6 +1,10 @@
 ## Trial and error
 
-This is a artificial intelligence designed to guess arithmetic operations from a x and a y, it can also replicate this operation with other data afterwords
+This is a artificial intelligence designed to guess arithmetic operations from input and output data, it can also replicate this operation with other data afterwords
+
+It is super fast for simple problems, and its complexisty scales with how complex you problem is and how much data there are
+
+Its result is the smallest number of operations that fits the entirety of the training data
 
 ## Usage
 
