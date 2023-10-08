@@ -62,11 +62,15 @@ wrapper object with:
 
 ```js
 [...]
-let [x,y] = generate(1000, 3, rule, true)
+let [x, y] = generate(0, 10, 1000, 3, rule,true)
 [...]
 ```
 
 #### parameters
+min: how small the number can be
+
+max: how big the number can be
+
 samples: number of samples
 
 sampleLength: length of the samples
