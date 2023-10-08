@@ -26,16 +26,16 @@ console.log(rule([5,2,8])) // 41
 ```
 
 
-## Methods
+## API
 
-### train
+### Train Method  
 ```js
 [...]
 const model = train(x,y)
 [...]
 ```
 
-#### parameters
+#### Parameters
 
 x: array of inputs
 example:
