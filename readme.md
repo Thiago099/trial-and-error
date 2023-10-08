@@ -9,13 +9,12 @@ The outcome it produces represents the minimal number of operations required to 
 ## Usage
 
 ```js
-console.clear();
 import { train, generate } from "trial-and-error"
 
 
 const rule = ([a, b, c])=>[a*5+c*b, a+c]
 
-let [x, y] = generate(0, 10, 1000, 3, rule,true)
+let [x,y] = generate(0,10, 1000, 3, rule, true)
 
 console.time("training")
 const model = train(x, y)
@@ -25,7 +24,6 @@ console.log(model.solutions) // [ 'a*5+b*c', 'a+c' ]
 
 console.log(model.predict([5,2,8])) // [ 41, 13 ]
 console.log(rule([5,2,8])) // [ 41, 13 ]
-
 ```
 
 
@@ -77,6 +75,6 @@ sampleLength: length of the samples
 
 rule: rule for creation of samples
 
-cache: if a cache of the result is wanted(this prevents the results from changing in multiple executions)
+cache: if a cache of the result is wanted (this prevents the results from changing in multiple executions)
 #### output
 training data on the format accepted by the train function
