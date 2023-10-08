@@ -1,5 +1,5 @@
 console.clear();
-import {train, generate} from "./index.js"
+import { train, generate } from "./index.js"
 
 
 const rule = ([a,b,c])=>[a*5+c*b, a+c]
