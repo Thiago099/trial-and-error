@@ -1,10 +1,10 @@
 ## Trial and error
 
-This is a artificial intelligence designed to guess arithmetic operations from input and output data, it can also replicate this operation with other data afterwords
+This artificial intelligence system has been created with the capability to deduce mathematical operations based on input and output data, and subsequently apply these operations to different sets of data.
 
-It is super fast for simple problems, its complexisty scales with how complex you problem is 
+It demonstrates exceptional speed when handling straightforward tasks, and its level of complexity adjusts according to the intricacy of the problem it encounters.
 
-Its result is the smallest number of operations that fits the entirety of the training data
+The outcome it produces represents the minimal number of operations required to accurately represent the entire training dataset.
 
 ## Usage
 
