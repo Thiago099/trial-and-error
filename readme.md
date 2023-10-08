@@ -12,7 +12,7 @@ The outcome it produces represents the minimal number of operations required to 
 import { train, generate } from "trial-and-error"
 
 
-const rule = ([a, b, c])=>[a*5+c*b, a+c]
+const rule = ([a, b, c]) => [a * 5 + c * b, a + c]
 
 let [x,y] = generate(0,10, 1000, 3, rule, true)
 
@@ -22,8 +22,8 @@ console.timeEnd("training") // training: 318.604ms
 
 console.log(model.solutions) // [ 'a*5+b*c', 'a+c' ]
 
-console.log(model.predict([5,2,8])) // [ 41, 13 ]
-console.log(rule([5,2,8])) // [ 41, 13 ]
+console.log(model.predict([5, 2, 8])) // [ 41, 13 ]
+console.log(rule([5, 2, 8])) // [ 41, 13 ]
 ```
 
 
@@ -32,7 +32,7 @@ console.log(rule([5,2,8])) // [ 41, 13 ]
 ### Train Method  
 ```js
 [...]
-const model = train(x,y)
+const model = train(x, y)
 [...]
 ```
 
@@ -60,7 +60,7 @@ wrapper object with:
 
 ```js
 [...]
-let [x, y] = generate(0, 10, 1000, 3, rule,true)
+let [x, y] = generate(0, 10, 1000, 3, rule, true)
 [...]
 ```
 
