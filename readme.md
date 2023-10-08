@@ -9,19 +9,22 @@ Its result is the smallest number of operations that fits the entirety of the tr
 ## Usage
 
 ```js
-import {train, generate} from "trial-and-error"
+console.clear();
+import {train, generate} from "./index.js"
 
 
-const rule = ([a,b,c]) => [a*5+c*b]
+const rule = ([a,b,c])=>[a*5+c*b, a+c]
 
-let [x,y] = generate(1000, 3, rule, true)
+let [x,y] = generate(1000,3, rule,true)
 
+console.time("training")
 const model = train(x,y)
+console.timeEnd("training") // training: 318.604ms
 
-console.log(model.solutions) // [ 'a*5+b*c' ]
+console.log(model.solutions) // [ 'a*5+b*c', 'a+c' ]
 
-console.log(model.predict([5,2,8])) // 41
-console.log(rule([5,2,8])) // 41
+console.log(model.predict([5,2,8])) // [ 41, 13 ]
+console.log(rule([5,2,8])) // [ 41, 13 ]
 
 ```
 
