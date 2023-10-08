@@ -46,17 +46,19 @@ example:
 
 #### output
 
+wrapper object with:
+     predict that takes a single input and returns a single output
+     property solutions that returns the solutions in human readable form
+
+### generate
+
+
 ```js
 [...]
 let [x,y] = generate(1000, 3, rule, true)
 [...]
 ```
 
-wrapper object with:
-     predict that takes a single input and returns a single output
-     property solutions that returns the solutions in human readable form
-
-### generate
 #### parameters
 samples: number of samples
 sampleLength: length of the samples
