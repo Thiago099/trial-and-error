@@ -1,0 +1,22 @@
+{
+  "name": "trial-and-error",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "example": "nodemon --quiet example.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "mathjs": "^11.11.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Thiago099/trial-and-error.git"
+  }
+}
