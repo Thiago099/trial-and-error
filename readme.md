@@ -10,7 +10,7 @@ The outcome it produces represents the minimal number of operations required to 
 
 ```js
 console.clear();
-import { train, generate } from "./index.js"
+import { train, generate } from "trial-and-error"
 
 
 const rule = ([a, b, c])=>[a*5+c*b, a+c]
