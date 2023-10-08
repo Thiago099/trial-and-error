@@ -68,8 +68,11 @@ let [x,y] = generate(1000, 3, rule, true)
 
 #### parameters
 samples: number of samples
+
 sampleLength: length of the samples
+
 rule: rule for creation of samples
+
 cache: if a cache of the result is wanted(this prevents the results from changing in multiple executions)
 #### output
 training data on the format accepted by the train function
