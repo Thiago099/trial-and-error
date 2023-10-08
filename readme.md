@@ -10,7 +10,7 @@ import {train, generate} from "trial-and-error"
 
 const rule = ([a,b,c]) => [a*5+c*b]
 
-let [x,y] = generate(1000, 3, rule,true)
+let [x,y] = generate(1000, 3, rule, true)
 
 const model = train(x,y)
 
@@ -25,6 +25,11 @@ console.log(rule([5,2,8])) // 41
 ## Methods
 
 ### train
+```js
+[...]
+const model = train(x,y)
+[...]
+```
 
 #### parameters
 
@@ -40,6 +45,13 @@ example:
 ```
 
 #### output
+
+```js
+[...]
+let [x,y] = generate(1000, 3, rule, true)
+[...]
+```
+
 wrapper object with:
      predict that takes a single input and returns a single output
      property solutions that returns the solutions in human readable form
