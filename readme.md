@@ -14,7 +14,7 @@ import { train, generate } from "trial-and-error"
 
 const rule = ([a, b, c]) => [a * 5 + c * b, a + c]
 
-let [x,y] = generate(0,10, 1000, 3, rule, true)
+let [x,y] = generate(0, 10, 1000, 3, rule, true)
 
 console.time("training")
 const model = train(x, y)
