@@ -1,7 +1,7 @@
 console.clear();
 import { train, generate,getRandomNumber } from "./index.js"
 
-const rule = ([a, b, c]) => [a * 5 + c * b / 21, a + c ]
+const rule = ([a, b, c]) => [a * 5 + c * b / 2, a / c ]
 
 let [x,y] = generate(0, 10, 1000, 3, rule, true)
 
