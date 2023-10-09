@@ -18,7 +18,7 @@ let [x,y] = generate(0, 10, 1000, 3, rule, true)
 
 console.time("training")
 const model = train(x, y)
-console.timeEnd("training") // training: 318.604ms
+console.timeEnd("training") // training: 368.06ms
 
 console.log(model.solutions) // [ 'a*5+b*c', 'a+c' ]
 
