@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "example": "nodemon --quiet example.js"
+    "example": "nodemon --quiet examples/example.js",
+    "example2": "nodemon --quiet examples/example2.js"
   },
   "author": "",
   "license": "GPL-3.0",
