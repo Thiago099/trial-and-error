@@ -32,7 +32,7 @@ console.log(rule([5, 2, 8])) // [ 41, 13 ]
 ### Train Method  
 ```js
 [...]
-const model = train(x, y)
+const model = train(x, y, threshold)
 [...]
 ```
 
@@ -48,6 +48,9 @@ example:
 ```js 
 [ [ 49 ], [ 23 ], [ 125 ], [ 118 ], [ 33 ] ]
 ```
+
+threshold:
+a positive number, that the closest it is to 0 the more strict the error must be in order to stop looking for a better answer
 
 #### output
 
