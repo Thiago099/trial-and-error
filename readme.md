@@ -34,7 +34,7 @@ only 0 and 1, if the third number is 0 pass the first two trough, else invert th
 
 ### Training data
 ```js
-x = [[1,0,0],[0,1,0],[1,0,1],[0,1,1]],
+x = [[1,0,0],[0,1,0],[1,0,1],[0,1,1]]
 y = [[1,0],[0,1],[0,1],[1,0]]
 ```
 
