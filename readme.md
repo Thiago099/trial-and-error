@@ -30,7 +30,7 @@ console.log(rule([5, 2, 8])) // [ 41, 13 ]
 
 ### Rule
 
-only 0 and ones, if the third number is 0 pass the first two trough, else invert them
+only 0 and 1, if the third number is 0 pass the first two trough, else invert them
 
 ### Training data
 ```js
