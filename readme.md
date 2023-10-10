@@ -26,8 +26,24 @@ console.log(model.predict([5, 2, 8])) // [ 41, 13 ]
 console.log(rule([5, 2, 8])) // [ 41, 13 ]
 ```
 
+## Here is a example where the solution was now known by me
 
-## API
+### Rule
+
+only 0 and ones, if the third number is 0 pass the first two trough, else invert them
+
+### Training data
+```js
+x = [[1,0,0],[0,1,0],[1,0,1],[0,1,1]],
+y = [[1,0],[0,1],[0,1],[1,0]]
+```
+
+### Solution
+```js
+[ 'a+a*c*-2+c', 'a*-1+a*c*2+c*-1+1' ]
+```
+
+## Usage
 
 ### Train Method  
 ```js

@@ -9,9 +9,8 @@ let [x,y] = [
 
 console.time("training")
 const model = train(x, y)
-console.timeEnd("training") // training: 318.604ms
+console.timeEnd("training")
 
-console.log(model.solutions) // [ 'a*5+b*c', 'a+c' ]
+console.log(model.solutions) 
 
-console.log(x.map(x=>[x, model.predict(x)])) // [ 41, 13 ]
-// console.log(rule([5, 2, 8])) // [ 41, 13 ]
+console.log(x.map(x=>[x, model.predict(x)])) 
